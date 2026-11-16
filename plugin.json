@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "universal-workbench",
+  "version": "0.1.0",
+  "description": "Coordinate research, engineering, design, and project context across available tools.",
+  "author": {
+    "name": "2q9e"
+  },
+  "keywords": [
+    "workflow",
+    "research",
+    "engineering",
+    "design",
+    "skills"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Universal Workbench",
+        "shortDescription": "Coordinate work across tools",
+        "longDescription": "A skills-only plugin for routing multi-step work across available research, context, design, and engineering tools. It reuses tools already connected to your host.",
+        "developerName": "2q9e",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Coordinate this task across my available tools and keep project context current.",
+          "Research this question with the right connected sources.",
+          "Implement this Figma design in my codebase."
+        ],
+        "logo": "./assets/universal-workbench.svg",
+        "composerIcon": "./assets/universal-workbench.svg",
+        "brandColor": "#2F8C86"
+      }
+    }
+  }
+}
