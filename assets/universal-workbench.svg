@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Connected work nodes">
+  <rect width="96" height="96" rx="22" fill="#102A35"/>
+  <path d="M28 30 48 48 69 28M48 48 70 68M48 48 27 69" fill="none" stroke="#64D6C8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="18" y="20" width="20" height="20" rx="6" fill="#F2FAF8"/>
+  <rect x="60" y="18" width="20" height="20" rx="6" fill="#F2FAF8"/>
+  <rect x="38" y="38" width="20" height="20" rx="6" fill="#64D6C8"/>
+  <rect x="60" y="58" width="20" height="20" rx="6" fill="#F2FAF8"/>
+  <rect x="17" y="59" width="20" height="20" rx="6" fill="#F2FAF8"/>
+</svg>
