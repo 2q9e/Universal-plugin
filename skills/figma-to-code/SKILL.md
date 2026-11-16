@@ -15,6 +15,8 @@ Use connected Figma tools when they are available. Otherwise use the design link
 4. Inspect the existing codebase and translate the design into its framework, components, tokens, and accessibility conventions. Treat generated code as design evidence, not automatically as project-ready code.
 5. Compare the completed interface with the design reference when visual comparison is available. Report visual validation only if it was performed.
 
+For screenshot comparisons, keep the viewport, device scale, fonts, and loading state consistent where the existing project tooling allows it. Reuse the project's current Playwright, Storybook, or Chromatic setup instead of adding a visual-testing service by default. A pixel difference is evidence of a visual change, not proof of semantic correctness.
+
 Use Figma write tools only when the user asked to change the Figma document. A request to implement a design in code authorizes the repository change, not an unrelated canvas edit.
 
 ## Small visual details

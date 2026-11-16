@@ -1,14 +1,16 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "universal-workbench",
-  "version": "0.1.0",
-  "description": "Coordinate research, engineering, design, and project context across available tools.",
+  "version": "0.2.0",
+  "description": "Route research and project work across Context Window Manager, Deep Research Engine, and Universal Reach.",
   "author": {
     "name": "2q9e"
   },
   "keywords": [
     "workflow",
     "research",
+    "platform-routing",
+    "context",
     "engineering",
     "design",
     "skills"
@@ -18,13 +20,13 @@
       "interface": {
         "displayName": "Universal Workbench",
         "shortDescription": "Coordinate work across tools",
-        "longDescription": "A skills-only plugin for routing multi-step work across available research, context, design, and engineering tools. It reuses tools already connected to your host.",
+        "longDescription": "A routing layer for Context Window Manager, Deep Research Engine, and Universal Reach. It selects platforms and sources, carries scope and evidence between workflows, and coordinates Figma and engineering tasks. Broad research uses the Deep Research Engine skill with host retrieval tools; Universal Reach adds relevant platform evidence; Context Window Manager handles project continuity. It depends on those capabilities but routes to each only when needed; it does not replace or bundle them.",
         "developerName": "2q9e",
         "category": "Productivity",
         "capabilities": [],
         "defaultPrompt": [
-          "Coordinate this task across my available tools and keep project context current.",
-          "Research this question with the right connected sources.",
+          "Use Deep Research Engine for broad sourced research, Universal Reach when platform or community evidence matters, and Context Window Manager for project continuity.",
+          "Recover my project context and route the next work across my companion plugins.",
           "Implement this Figma design in my codebase."
         ],
         "logo": "./assets/universal-workbench.svg",
