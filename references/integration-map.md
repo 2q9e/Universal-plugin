@@ -32,16 +32,19 @@ If one companion skill or integration is unavailable, report which route is miss
 
 ## Choose a platform when the user has not named one
 
-Use the source community that is most likely to contain the kind of evidence the user asked for. Keep the set small and explain any material source limitation.
+Choose the evidence source before the platform. Prefer primary records for claims about product behavior, policy, or announcements; use community material when the question is about people's experiences or reactions. If the user names a platform, honor that choice and check whether its current tools can reach the requested material. Otherwise choose the smallest relevant set of candidates below. These examples are routing heuristics, not a ranking or a promise of connector support; confirm live platform and operation availability before querying.
 
 | Research need | Candidate platform/source class | How to use it |
 | --- | --- | --- |
-| Software behavior or technical troubleshooting | Official docs and release notes first; then the project's GitHub issues/discussions, relevant Stack Exchange site, or maintainer/community forum | Use Deep Research Engine for the sourced investigation. Use Universal Reach only for platforms and operations it currently exposes. Treat discussion posts as reports or examples, not official behavior. |
-| Public user experiences or community discussion | The topical public forum or social platform where the relevant users participate | Select the platform from the subject and the user's requested audience. Public posts are anecdotal and may not represent all users. |
-| Creator, channel, product, or organization statements | The creator's official site/channel/account or first-party announcements | Prefer the original announcement. Use a public platform adapter only when it exposes the needed operation; owner-only APIs do not provide general account search. |
-| General factual, academic, policy, or historical question | Government, academic, primary, and reputable reporting sources | Use Deep Research Engine as the main route. Add Universal Reach only when a specific public community's response is part of the question. |
+| Product behavior, policy, or current announcement | Official docs, release notes, standards, or the organization's own site first | Use Deep Research Engine with host search/retrieval for broad synthesis. Use discussion platforms only when the question asks how people experienced or responded to the change. |
+| Repository-specific behavior or maintainer intent | The exact project's repository, releases, issues, or discussions; GitHub is a candidate when the project is hosted there | Prefer the canonical record. If GitHub MCP is connected, check its current OAuth access and organization policy; public repository visibility does not guarantee private issue or organization access (GitHub, n.d.). |
+| User troubleshooting or product experiences | A topical Stack Exchange site or community forum; Reddit is a candidate for public topic communities | Select by the community actually discussing the subject. Treat posts as reports or examples, not verified product behavior. Reddit Data API use may require approval and current access conditions (Reddit, n.d.). |
+| Public social reaction across communities | One or two relevant public communities on Reddit, Mastodon, or Bluesky, selected by topic, language, region, and audience | Use Universal Reach only if its live capability response supports the platform and needed operation. Mastodon access can vary by instance and scope; AT Protocol distinguishes public reads from account-authorized actions (Mastodon, n.d.; Bluesky Social PBC, n.d.). Do not infer population-wide opinion from platform posts. |
+| Creator statements or video content | The creator's official site/channel; YouTube is a candidate for creator-published video | Prefer the original post or video. Use a transcript operation only if the connected tool exposes it for that item. Public YouTube metadata and private account data have different authorization routes and quotas (Google, n.d.-b). |
+| Academic, policy, historical, or general factual claims | Original papers, standards, public records, government sources, and reputable reporting | Use Deep Research Engine for cross-source synthesis. Add Universal Reach only when a specific public community's response is material to the question. |
+| Workspace or account-specific content | The relevant first-party API, OAuth/MCP connector, or user-selected export | Load `authorized-source-access`. Check identity, scope, account role, and data type; public platform retrieval is not a substitute for account authorization. |
 
-If the intended audience or community materially changes the answer, ask one short clarification. Otherwise choose the best-supported public source set and state it. Do not fan out over every platform just because `search_multi` exists.
+State why the selected source fits the evidence need and disclose material coverage limits. If audience or community choice would materially change the answer, ask one concise clarification; otherwise make a reasonable choice. Do not fan out over every platform just because `search_multi` exists.
 
 ## Universal Reach workflow
 
@@ -65,6 +68,8 @@ For research that needs both platform evidence and broad synthesis:
 4. Use Universal Reach for the exact platform operations its current capability result supports. Return the source URLs, observed publication dates, retrieval time, access mode, and incomplete-result warnings to the research workflow.
 5. Keep one source/citation trail across the answer. A result reused by two plugins is still one source, not independent corroboration. Keep public claims distinct from content visible only through the user's account.
 6. Save a compact Context Window Manager checkpoint with the objective, decisions, source links, access limitations, completed work, and next step. Do not save passwords, API tokens, cookies, or unnecessary private page contents.
+
+For a multi-route handoff, carry a compact route record with the question and evidence role; selected platform(s) and why they fit; the live capability check and operation used; access class and scope; canonical source links and publication/retrieval dates; and any page limits, missing results, warnings, or unresolved route. Include only fields relevant to the next step. Never include credentials or unnecessary private page contents.
 
 When Deep Research Engine is not needed, use Universal Reach directly for a simple platform lookup. When Universal Reach has no supported route, do not invent an adapter or imply that Deep Research Engine can see private platform content. Use an authorized official source if available, otherwise state what remains inaccessible.
 
