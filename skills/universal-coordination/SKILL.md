@@ -2,6 +2,7 @@
 name: universal-coordination
 description: Use when a request needs routing across Context Window Manager, Deep Research Engine, Universal Reach, or other tools and stages.
 ---
+<!-- Copyright (c) 2026 2q9e. See ../../LICENSE for terms. -->
 
 # Universal coordination
 

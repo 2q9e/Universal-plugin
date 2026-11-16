@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2026 2q9e. See LICENSE for terms. -->
+
 # Universal Workbench
 
 Universal Workbench is the routing and coordination layer for the user's companion packages. It tells the model which platform, source, and workflow to use, carries task constraints between them, and keeps project state aligned.

@@ -2,6 +2,7 @@
 name: engineering-flow
 description: Use for nontrivial coding, debugging, or design-to-implementation work that benefits from a deliberate workflow.
 ---
+<!-- Copyright (c) 2026 2q9e. See ../../LICENSE for terms. -->
 
 # Engineering flow
 

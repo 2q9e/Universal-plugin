@@ -2,6 +2,7 @@
 name: figma-to-code
 description: Use when implementing or reviewing an interface from a Figma design, screenshot, or exported visual reference.
 ---
+<!-- Copyright (c) 2026 2q9e. See ../../LICENSE for terms. -->
 
 # Figma to code
 

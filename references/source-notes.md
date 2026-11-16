@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2026 2q9e. See ../LICENSE for terms. -->
+
 # Source notes
 
 Universal Workbench adapts operating patterns from the projects and documentation below. It does not copy their source code, package other plugins' skills, or claim their capabilities when the corresponding tool is unavailable.

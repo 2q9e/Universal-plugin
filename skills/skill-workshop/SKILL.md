@@ -2,6 +2,7 @@
 name: skill-workshop
 description: Use when creating, updating, or packaging reusable agent skills or skill-based plugins.
 ---
+<!-- Copyright (c) 2026 2q9e. See ../../LICENSE for terms. -->
 
 # Skill workshop
 

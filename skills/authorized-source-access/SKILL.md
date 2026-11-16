@@ -2,6 +2,7 @@
 name: authorized-source-access
 description: Use when research needs login-dependent, workspace-only, or account-specific content, or would send authenticated browser state through a service.
 ---
+<!-- Copyright (c) 2026 2q9e. See ../../LICENSE for terms. -->
 
 # Authorized source access
 

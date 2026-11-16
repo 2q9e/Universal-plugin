@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2026 2q9e. See ../LICENSE for terms. -->
+
 # Deep Discovery: related project patterns and source routes
 
 **Reviewed:** November 16, 2026  

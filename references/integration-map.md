@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2026 2q9e. See ../LICENSE for terms. -->
+
 # Companion integration and source-routing map
 
 Universal Workbench routes work across the user's companion packages. It selects a platform and source based on the task, directs available research and retrieval tools, and keeps context aligned. It does not perform the work of Context Window Manager, Deep Research Engine, or Universal Reach itself.
