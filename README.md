@@ -2,7 +2,7 @@
 
 # Universal Workbench
 
-Universal Workbench is the routing and coordination layer for the user's companion packages. It tells the model which platform, source, and workflow to use, carries task constraints between them, and keeps project state aligned.
+Universal Workbench helps agents decide which tools and companion packages to use for multi-stage work. It provides skills for engineering, Figma handoffs, authorized source access, skill authoring, and keeping project context aligned across tools.
 
 Universal Workbench depends on **Context Window Manager**, **Deep Research Engine**, **Universal Reach**, and host retrieval tools for the routes that use them. Each task uses only the companions that fit: broad research uses the Deep Research Engine skill with host web/search/retrieval tools; Universal Reach adds platform-specific public-content retrieval when that evidence matters; and Context Window Manager supplies continuity when continuing multi-step work. Universal Workbench does not replace or bundle them.
 
